@@ -1,0 +1,119 @@
+General integration:
+
+Add an invisible one pixel image tag to the "thank you" page of your shopping cart or order
+processing system, like this:
+
+<img src="http://www.yoursite.com/ashopaffiliate/order.php?invoice={invoice}&price={price}" width="1" height="1" alt="Affiliate Tracking" />
+
+The words in brackets should be replaced with the codes your shopping cart is using, which can be very
+different in different systems, for example: %amount% instead of {price}.
+
+The following parameters can be used:
+
+invoice - unique invoice number for this order
+price - the amount on which the affiliate commission should be calculated
+customerid - the ID of your customer in your shopping cart system
+email - the email address of your customer
+firstname - the first name of your customer
+lastname - the last name of your customer
+product - a description of what the customer bought
+wholesale - set this to "1" to treat the order as a wholesale order, with different commission than retail
+
+Only the invoice and price parameters are required.
+
+
+----------------------------------------------------------------------------
+
+Authorize.Net SIM:
+
+1 Configure Authorize.net Silent order post
+
+Login to your Authorize.net account. Open the page menu->account->settings->Silent post URL.
+Specify the URL to your AShop Affiliate authorizenet.php script.
+For example http://www.yoursite.com/ashopaffiliate/authorizenet.php
+After you are done, click Submit button.
+
+2 Edit your SIM forms
+
+You must add one custom field to all your SIM forms like this:
+
+<form action="authorizenet.php" method=post>
+    <INPUT type='hidden' name='x_login' value='myLogin' />
+    <INPUT type='hidden' name='x_amount' value='548' />
+    <INPUT type='hidden' name='x_description' value='desc of my product' />
+    <INPUT type='hidden' name='x_invoice_num' value='ic132458' />
+    <INPUT type='hidden' name='x_fp_sequence' value='xyz' />
+    <INPUT type='hidden' name='x_fp_timestamp' value='def' />
+    <INPUT type='hidden' name='x_fp_hash' value='abc' />
+    <INPUT type='hidden' name='x_show_form' value='PAYMENT_FORM' />
+    <INPUT type='hidden' id='ashop_affiliate' name='custom' value='' />
+</form>
+
+You should also add the following code to your page, below the form code mentioned above:
+
+<script src="http://www.yoursite.com/ashopaffiliate/affiliate.js" type="text/javascript"></script>
+
+Note: If you have more than one form on the page, only add the script code once, not once per form.
+
+
+----------------------------------------------------------------------------
+
+PayPal:
+
+PayPal can be integrated through their IPN system and it can be used with your Buy Now buttons.
+
+Note: If you use PayPal as a processing system in your shopping cart, you need to integrate with your
+cart, not using these steps.
+
+1 Integration code
+
+Add the following code to your PayPal button form, changing the "www.yoursite.com/ashopaffiliate" part
+to the actual URL where your AShop Affiliate is installed:
+
+<input type="hidden" name="notify_url" value="http://www.yoursite.com/ashopaffiliate/paypal.php">
+<input type="hidden" name="custom" value="" id="ashop_affiliate">
+<script src="http://www.yoursite.com/ashopaffiliate/affiliate.js" type="text/javascript"></script>
+
+Example of updated PayPal form:
+
+<!-- Begin PayPal Button -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="paypalemail@yoursite.com">
+<input type="hidden" name="undefined_quantity" value="1">
+<input type="hidden" name="item_number" value="Product Name">
+<input type="hidden" name="amount" value="19.95">
+<input type="hidden" name="image_url" value="https://yoursite.com/images/paypaltitle.gif">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="http://www.yoursite.com/paypalthanks.html">
+<input type="hidden" name="cancel_return" value="http://www.yoursite.com">
+<input type="hidden" name="notify_url" value="http://www.yoursite.com/ashopaffiliate/paypal.php">
+<input type="hidden" name="custom" value="" id="ashop_affiliate">
+<script src="http://www.yoursite.com/ashopaffiliate/affiliate.js" type="text/javascript"></script>
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit"
+alt="PayPal - The safer, easier way to pay online!">
+</form>
+<!-- End PayPal Button -->
+
+
+
+Another example with a different type of button code:
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="SDFASDF123123">
+<input type="hidden" name="custom" value="" id="ashop_affiliate">
+<input type="hidden" name="notify_url" value="http://www.yoursite.com/ashopaffiliate/paypal.php">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit"
+alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<script src="http://affiliate.ashopsoftware.com/affiliate.js" type="text/javascript">
+</script>
+
+This is all that is required. Now whenever there's sale, PayPal will use its IPN notification to
+inform the sale tracking script about the transaction, which will generate commission for the affiliate.
+
+Note: If you have more buttons at one page, you should use only the custom field code in each button.
+The script tag should be inserted only once per page just like for Authorize.Net.

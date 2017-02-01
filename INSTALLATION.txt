@@ -1,0 +1,56 @@
+Software Requirements:
+
+- At least version 5.0.0 of PHP.
+- PHP Safe Mode = Off
+- PHP File Uploads = On (to use the banner upload features)
+- A MySQL database
+- Curl With SSL Available
+- The PHP fsockopen-function is working
+
+
+Installation of Software
+
+1. Unzip the AShop Affiliate program files on your local computer.
+ 
+2. Use an FTP client, for example the free Filezilla, to upload the AShop Affiliate files and folders
+to your website. AShop Affiliate may be installed in the public root directory or in a subdirectory
+if you want to link to it from existing web pages. The AShop Affiliate directory structure must remain
+the same as in the distibution package.
+ 
+3. If necessary, change permissions of the following directories and files to 777. On some hosts
+PHP is run under your own user account and already has full permissions to the files and folders
+by default. Check with your hosting provider if you are unsure.
+
+- banners
+- images
+- images/logo.gif
+ 
+4. Create a MySQL database for AShop Affiliate and add a user with a password to the database.
+This can usually be done through your hosting provider's control panel. The user must have full
+privileges on the database.
+ 
+5. Open config.inc.php in a text editor such as NotePad and edit the following variables:
+
+- $databaseserver = "hostname for the MySQL server"
+
+The database is usually located at "localhost", unless your hosting provider has a separate shared
+MySQL server. Check with them if you are unsure.
+
+- $databasename = "name of the MySQL database"
+- $databaseuser = "user name that you added to the database that you created"
+- $databasepasswd = "password for the user name that you added to the database"
+
+6. Run install.php from a browser. This will create the database tables. To do this, enter something
+like this into your browser address bar: http://www.yourdomain.com/install.php
+
+7. Follow the instructions on screen to complete the installation.
+
+You will now see the AShop Affiliate administration panel login. The default password for the
+administrator is "ashopadmin". Login and setup the Configuration, then Link Codes to add you own
+banner or text ads which your affiliates can use to market your products.
+
+For security we recommend that you change the administrator password on the page 
+Configuration->Shop Parameters.
+
+Check the INTEGRATION.txt document for information about how to integrate AShop Affiliate with your
+shopping cart or payment processor.

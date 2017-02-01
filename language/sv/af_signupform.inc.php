@@ -1,0 +1,31 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+define('SIGNUP', 'registrera dig i v&aring;rt affiliateprogram!');
+define('SIGNUPHERE', 'G&aring; med i');
+define('AFFILIATEPROGRAM', 'affiliateprogram');
+define('ALREADYSIGNEDUP', 'Redan registrerad?');
+define('LOGINHERE', 'Logga in h&auml;r');
+define('AFFILIATEMESSAGE', 'N&auml;r du fyllt i detta formul&auml;r kommer ett l&ouml;senord att skickas till den e-postadress du skrivit. Kontrollera din e-post och skriv ditt anv&auml;ndarnamn och l&ouml;senord f&ouml;r att logga in till din privata affiliatesida d&auml;r du kan hitta din l&auml;nkkod och se statistik &ouml;ver hur m&aring;nga kunder du h&auml;nvisat till oss.');
+define('USERNAME', 'Anv&auml;ndarnamn');
+define('MAXCHARS', '[max 10 tecken]');
+define('BUSINESS', 'F&ouml;retag');
+define('FIRSTNAME', 'F&ouml;rnamn');
+define('LASTNAME', 'Efternamn');
+define('EMAIL', 'E-post');
+define('ADDRESS', 'Gatuadress');
+define('CITY', 'Ort');
+define('STATE', 'Stat/Omr&aring;de');
+define('PROVINCE', 'Omr&aring;de');
+define('ZIP', 'Postnummer');
+define('COUNTRY', 'Land');
+define('PHONE', 'Telefon');
+define('URL', 'URL till din webbplats');
+define('PAYPAL', 'PayPalID');
+define('OPTIONAL', '[valfritt, l&aring;ter oss betala dig automatiskt]');
+define('PLEASEPROVIDE', 'Ge oss g&auml;rna en kort beskrivning av ditt f&ouml;retag.');
+define('DESCRIPTION', 'Beskrivning');
+define('SECURITYCODE', 'S&auml;kerhetskod');
+define('TYPESECURITYCODE', 'Skriv s&auml;kerhetskoden');
+define('SUBMIT', 'Skicka');
+define('RESET', 'Nollst&auml;ll');
+?>

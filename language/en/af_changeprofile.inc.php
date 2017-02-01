@@ -1,0 +1,36 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />');
+define('NOTREGISTERED', 'You haven\'t registered!');
+define('SORRY', 'Sorry!');
+define('USERNAMENOTREGISTERED', 'Your user name or email address is not registered.');
+define('TRYAGAIN', 'Try again!');
+define('WRONGPASS', 'Wrong password!');
+define('INCORRECTPASS', 'The password you entered was incorrect.');
+define('CHANGEPROFILE', 'Change your affiliate profile');
+define('WELCOME', 'Welcome');
+define('AFFILIATEID', 'Affiliate id');
+define('VIEWPROFILE', 'View/Edit Profile');
+define('CHANGEPASS', 'Change Password');
+define('ORDERHISTORY', 'Order History');
+define('STATISTICS', 'Statistics');
+define('LINKCODES', 'Link Codes');
+define('DOWNLINE', 'Downline');
+define('LOGOUT', 'Logout');
+define('LEADS', 'Leads');
+define('INBOX', 'Inbox');
+define('CHANGEBELOW', 'Change your information below');
+define('BUSINESS', 'Business name');
+define('FIRSTNAME', 'First name');
+define('LASTNAME', 'Last name');
+define('EMAIL', 'Email');
+define('ADDRESS', 'Address');
+define('CITY', 'City');
+define('STATE', 'State/Province');
+define('ZIP', 'Zip');
+define('COUNTRY', 'Country');
+define('PHONE', 'Phone');
+define('URL', 'URL to your website');
+define('PAYPAL', 'PayPal ID');
+define('OPTIONAL', '[optional, allows us to pay you automatically]');
+define('UPDATE', 'Update');
+?>

@@ -1,0 +1,32 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+define('ADMINPANELLOGIN', 'Inloggning till administrationspanel');
+define('ADMINISTRATIONPANEL', 'Administrationspanel');
+define('WRONGUSERORPASS', 'Fel användarnamn eller lösenord!');
+define('TRYAGAIN', 'Försök igen!');
+define('USERALREADYLOGGEDIN', 'Användaren är redan inloggad!<br>Logga in på nytt för att ta över.');
+define('ADMINPANELLOCKED', 'Administrationspanelen är låst!<br>Försök igen om 2 minuter!');
+define('FIRSTLOGINWELCOME', 'Välkommen!<br>Ditt lösenord är: ashopadmin');
+define('USERNAME', 'Användarnamn');
+define('PASSWORD', 'Lösenord');
+define('ENTERNEWPASS', 'Ange ett nytt lösenord...');
+define('NEWPASSWORD', 'Nytt lösenord');
+define('CONFIRM', 'Bekräfta');
+define('LOGIN', 'Logga in');
+define('FORGOTYOURPASSWORD', 'Glömt ditt lösenord?');
+define('INCORRECTLOGINATTEMPTS', 'felaktiga inloggningsförsök');
+define('INCORRECTLOGINNOTICE1', 'Någon har just gjort tre eller fler felaktiga försök att logga in till AShop-administrationspanelen på');
+define('INCORRECTLOGINNOTICE2', 'Försöken gjordes från följande IP-nummer');
+define('ADMINPANELPASSWORD', 'Lösenord för admininistrationspanel');
+define('SHOPPINGMALLPASSWORD', 'Köpcentrumlösenord');
+define('YOURSHOPPINGMALLPASSWORD', 'Ditt köpcentrumlösenord');
+define('YOURPASSWORDFOR', 'Ditt lösenord för');
+define('CANBEGHANGED', 'kan ändras genom att följa denna länk');
+define('YOURPASSWORDHASBEENSENT', 'Instruktioner om hur du byter ditt lösenord<br>har skickats till dig per e-post');
+define('NOTREGISTERED', 'Du är inte registrerad som säljare i köpcentrumet');
+define('ENTERUSERNAMEANDWEWILLSENDPASS', 'Ange ditt användarnamn så skickar vi<br>instruktioner om hur du byter ditt lösenord<br>till den e-postadress du angav när du<br>anmälde dig som säljare i köpcentrumet...');
+define('SUBMIT', 'Skicka');
+define('INVALIDRESETCODE', 'Ogiltig lösenordskod!');
+define('PASSWORDSDIDNOTMATCH', 'Lösenorden var inte samma!');
+define('YOURPASSWORDHASBEENCHANGED', 'Ditt lösenord har blivit ändrat!');
+?>

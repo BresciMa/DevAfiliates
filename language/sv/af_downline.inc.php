@@ -1,0 +1,32 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+define('NOTREGISTERED', 'Du &auml;r inte registrerad!');
+define('SORRY', 'Tyv&auml;rr!');
+define('USERNAMENOTREGISTERED', 'Ditt anv&auml;ndarnamn eller e-postadress finns inte i v&aring;r databas!');
+define('TRYAGAIN', 'F&ouml;rs&ouml;k igen!');
+define('WRONGPASS', 'Fel l&ouml;senord!');
+define('INCORRECTPASS', 'L&ouml;senordet du skrev &auml;r felaktigt.');
+define('WELCOME', 'V&auml;lkommen');
+define('AFFILIATEID', 'Affiliateid');
+define('VIEWPROFILE', '&Auml;ndra dina uppgifter');
+define('CHANGEPASSBTN', 'Byt l&ouml;senord');
+define('ORDERHISTORY', 'Orderhistorik');
+define('STATISTICS', 'Statistik');
+define('LINKCODES', 'L&auml;nkkoder');
+define('SPONSOR', 'Din sponsor');
+define('PMYOUR', 'Skicka PM till din');
+define('PMSPONSOR', 'sponsor');
+define('DOWNLINE', 'downline');
+define('SUBJECT', '&auml;mne');
+define('MESSAGE', 'Meddelande');
+define('SENDPM', 'Skicka PM');
+define('MESSAGESENT', 'Ditt PM har skickats!');
+define('LOGOUT', 'Logga ut');
+define('LEADS', 'Leads');
+define('INBOX', 'Inkorg');
+define('REFERRALLEVEL', 'H&auml;nvisningsniv&aring;');
+define('NAME', 'Namn');
+define('ORDERS', 'Antal best&auml;llningar');
+define('ACTIVITY', 'Senaste aktivitet');
+define('REGISTRATIONDATE', 'Kontot skapades den');
+?>

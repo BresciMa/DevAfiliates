@@ -1,0 +1,36 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+define('NOTREGISTERED', 'Du &auml;r inte registrerad!');
+define('SORRY', 'Tyv&auml;rr!');
+define('USERNAMENOTREGISTERED', 'Ditt anv&auml;ndarnamn eller l&ouml;senord finns inte i v&aring;r databas!');
+define('TRYAGAIN', 'F&ouml;rs&ouml;k igen!');
+define('WRONGPASS', 'Fel l&ouml;senord!');
+define('INCORRECTPASS', 'L&ouml;senordet du skrev &auml;r felaktigt.');
+define('CHANGEPROFILE', '&Auml;ndra dina uppgifter');
+define('WELCOME', 'V&auml;lkommen');
+define('AFFILIATEID', 'Affiliateid');
+define('VIEWPROFILE', '&Auml;ndra dina uppgifter');
+define('CHANGEPASS', 'Byt l&ouml;senord');
+define('ORDERHISTORY', 'Orderhistorik');
+define('STATISTICS', 'Statistik');
+define('LINKCODES', 'L&auml;nkkoder');
+define('DOWNLINE', 'Downline');
+define('LOGOUT', 'Logga ut');
+define('LEADS', 'Leads');
+define('INBOX', 'Inkorg');
+define('CHANGEBELOW', '&Auml;ndra dina uppgifter nedan');
+define('BUSINESS', 'F&ouml;retag');
+define('FIRSTNAME', 'F&ouml;rnamn');
+define('LASTNAME', 'Efternamn');
+define('EMAIL', 'E-post');
+define('ADDRESS', 'Gatuadress');
+define('CITY', 'Ort');
+define('STATE', 'Stat/omr&aring;de');
+define('ZIP', 'Postnummer');
+define('COUNTRY', 'Land');
+define('PHONE', 'Telefon');
+define('URL', 'URL till din webbplats');
+define('PAYPAL', 'PayPalID');
+define('OPTIONAL', '[valfritt, l&aring;ter oss betala dig automatiskt]');
+define('UPDATE', '&Auml;ndra');
+?>

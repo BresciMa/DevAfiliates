@@ -1,0 +1,32 @@
+<?php
+define('CHARSET', '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+define('ADMINPANELLOGIN', 'Administration Panel Login');
+define('ADMINISTRATIONPANEL', 'Administration Panel');
+define('WRONGUSERORPASS', 'Wrong username or password!');
+define('TRYAGAIN', 'Try again!');
+define('USERALREADYLOGGEDIN', 'That user is already logged in!<br>Login again to override.');
+define('ADMINPANELLOCKED', 'The administration panel has been locked!<br>Try again in 2 minutes!');
+define('FIRSTLOGINWELCOME', 'Welcome!<br>Your default password is: ashopadmin');
+define('USERNAME', 'Username');
+define('PASSWORD', 'Password');
+define('ENTERNEWPASS', 'Enter a new password...');
+define('NEWPASSWORD', 'New Password');
+define('CONFIRM', 'Confirm');
+define('LOGIN', 'Login');
+define('FORGOTYOURPASSWORD', 'Did you forget your password?');
+define('INCORRECTLOGINATTEMPTS', 'incorrect login attempts');
+define('INCORRECTLOGINNOTICE1', 'Someone has just made three or more incorrect attempts to login to your AShop administration panel at');
+define('INCORRECTLOGINNOTICE2', 'The attempts were made from the following IP number');
+define('ADMINPANELPASSWORD', 'Admin Panel Password');
+define('SHOPPINGMALLPASSWORD', 'Shopping Mall Password');
+define('YOURSHOPPINGMALLPASSWORD', 'Your Shopping Mall Seller Password');
+define('YOURPASSWORDFOR', 'Your password for');
+define('CANBEGHANGED', 'can be changed by following this link');
+define('YOURPASSWORDHASBEENSENT', 'Instructions on how to change your password<br>has been sent to you by email');
+define('NOTREGISTERED', 'You are not registered as a shopping mall seller');
+define('ENTERUSERNAMEANDWEWILLSENDPASS', 'Enter your user name and we will send<br>instructions for changing your password<br>to the email address you entered when you<br>signed up as a shopping mall seller...');
+define('SUBMIT', 'Submit');
+define('INVALIDRESETCODE', 'Invalid reset code!');
+define('PASSWORDSDIDNOTMATCH', 'The passwords did not match!');
+define('YOURPASSWORDHASBEENCHANGED', 'Your password has been successfully changed!');
+?>

@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+Options +Indexes
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^/]+)/?([^/]+)?/?$ ../view.php?$1&salesletters/$2 [NC,L]
